@@ -34,4 +34,11 @@ if __name__ == "__main__":
     print("Your order:", user_order)
     subtotal = sum(Menu[item] * qty for item, qty in user_order.items())
     print(f"Subtotal: ${subtotal:.2f}")
+
+    # x+0.1x = subtotal --> x(1+0.1) = subtotal --> x = subtotal/1.1
+    base_price = subtotal / (1 + GST)
+    gst_amount = subtotal - base_price
+    print(f"Base Price: ${base_price:.2f}")
+    print(f"GST (10%): ${gst_amount:.2f}")
+    print(f"Total Amount Payable: ${subtotal:.2f}")
     
