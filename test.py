@@ -1,8 +1,8 @@
 Menu = {
-    "cheeseburger":15.00,
-    "chicken burger":20.00,
-    "Small soft drink":4.00,
-    "Large soft drink":5.00,
+    "Cheeseburger":15.00,
+    "Chicken burger":20.00,
+    "Soft Drink (Small)":4.00,
+    "Soft Drink (Large)":5.00,
 }
 
 GST =0.10
@@ -41,4 +41,16 @@ if __name__ == "__main__":
     print(f"Base Price: ${base_price:.2f}")
     print(f"GST (10%): ${gst_amount:.2f}")
     print(f"Total Amount Payable: ${subtotal:.2f}")
+
+    print("——————————————————————————")
+    for item, qty in user_order.items():
+        if qty > 0:
+            # item_total = Menu[item] * qty
+            # print(f"{qty} x {item} @ ${Menu[item]:.2f} each: ${item_total:.2f}")
+            print(f"{item} x {qty} : ${Menu[item] * qty:.2f}")
+    subtotal = sum(Menu[item] * qty for item, qty in user_order.items())
+    print("\n\n")
+    print("Total", f"${subtotal:.2f}")
+    print("Including GST (10%)", f"${gst_amount:.2f}")
     
+    print("——————————————————————————")
