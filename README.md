@@ -10,9 +10,18 @@ The application allows a user to select items from a predefined menu, calculates
 
 Example output:
 ——————————————————————————
+
 Cheeseburger x 2 $30.00
 Soft drink (Large) x 1 $5.00
- 
+
+
 Total $35.00
 Including GST ($3.18)
 ——————————————————————————
+
+
+Clone: git clone 
+
+Install: pip install streamlit 
+
+Run: streamlit run app.py
