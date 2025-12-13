@@ -32,3 +32,9 @@ Redcat-Restaurant_Order_Processor/
 ├── test_app.py        # Unit tests for the calculate_order function.
 ├── requirements.txt   # List of Python dependencies (including Streamlit).
 └── README.md         
+
+
+Result-screenshot:
+A view of the final order processor interface: ![UI.png](https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor/blob/main/UI.png)
+
+Unit Test Result: ![Unit Test.png](https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor/blob/main/Unit%20Test.png)
