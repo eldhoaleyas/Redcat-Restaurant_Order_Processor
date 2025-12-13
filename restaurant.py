@@ -7,31 +7,7 @@ Menu = {
 
 GST =0.10
 
-def order(menu):
-    order = {}
-    print("Please place your order. Enter quantity for each item.")
-    for item, price in menu.items():
-        while True:
-            s = input(f"No of {item}s: ").strip()
-            if s == "":
-                qty = 0
-                break
-            try:
-                qty = int(s)
-                break
-            except ValueError:
-                print("Please enter a whole number (0 or greater), or press Enter for 0.")
-        if qty < 0:
-            print("Negative quantity not allowed; setting to 0.")
-            qty = 0
-        order[item] = qty
-    return order
-
-if __name__ == "__main__":
-    print("Welcome to the Redcat Shop!")
-    print("Here is our menu:")
-    user_order = order(Menu)
-    
+def calculate_order(user_order):
     subtotal = sum(Menu[item] * qty for item, qty in user_order.items())
     
 
@@ -52,3 +28,38 @@ if __name__ == "__main__":
     print("Including GST (10%)", f"${gst_amount:.2f}")
     
     print("——————————————————————————")
+
+def order(menu):
+    order = {}
+    print("Please place your order. Enter quantity for each item.")
+    for item, price in menu.items():
+        while True:
+            s = input(f"No of {item}s: ").strip()
+            if s == "":
+                qty = 0
+                break
+            try:
+                
+                if int(s) <0:
+                    print("Negative quantity not allowed; Enter a whole number (0 or greater).Press Enter for 0.")
+                    
+                else:
+                    qty = int(s)
+                    break
+            except ValueError:
+                print("Please enter a whole number (0 or greater), or press Enter for 0.")
+            
+        # if qty < 0:
+        #     print("Negative quantity not allowed; setting to 0.")
+        #     qty = 0
+        order[item] = qty
+    # return order
+
+    calculate_order(order)
+
+if __name__ == "__main__":
+    print("Welcome to the Redcat Shop!")
+    print("Here is our menu:")
+    order(Menu)
+    
+    
