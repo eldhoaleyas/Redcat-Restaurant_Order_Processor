@@ -38,3 +38,8 @@ Result-screenshot:
 A view of the final order processor interface: ![UI.png](https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor/blob/main/UI.png)
 
 Unit Test Result: ![Unit Test.png](https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor/blob/main/Unit%20Test.png)
+
+
+Deployment:
+The simple dashboard app is deployed in Streamlit.
+https://redcat-restaurantorderproce2.streamlit.app/
