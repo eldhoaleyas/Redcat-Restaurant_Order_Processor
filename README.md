@@ -13,7 +13,7 @@ Features:
  -Python3.
  -Streamlit
 
--Clone the Repository:git clone https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor.git
+-Clone the Repository:git clone https://github.com/eldhoaleyas/Redcat-Restaurant_Order_Processor.git (or open the master branch in vscode codespaces to run the repo in cloud)
 -Create and Activate Virtual Environment:It is crucial to work inside a virtual environment to manage dependencies.
 -Create the environment:python3 -m venv .venv
 -Activate the environment: source .venv/bin/activate
@@ -30,7 +30,7 @@ Project Structure:
 Redcat-Restaurant_Order_Processor/
 ├── app.py             # Contains the Streamlit UI and the core calculation logic.
 ├── test_app.py        # Unit tests for the calculate_order function.
-├── requirements.txt   # List of Python dependencies (including Streamlit).
+├── requirements.txt   # List of Python dependencies.
 └── README.md         
 
 
